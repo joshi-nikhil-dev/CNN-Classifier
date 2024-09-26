@@ -1,10 +1,10 @@
 I have Simplified the dataset by creating an AgeFolderDataset class which automatically retrieves the image path and labels based on the folder names. One of the challenges that I faced was the risk of overfitting. Beacuse the dataset is not that huge and ore complex architectures might not be favourable. I even implemented Hyperparameter tuning. I used optuna to do this. I set 50 different scenarios for hyperparameter tuning so that I can get the best result which will be optmizied to this particular CNN. Initially when I had set the learning rate at 0.001 and batch size 64, I was getting MSE > 5. After I implemented it, I achieved a MSE of 3.85 which is a good result taking teh dataset size and the model simplicity into picture. Please do Ignore the plotly error as I did not have it installed on my system.
 
 a. Model Architecture:
--I have created a CNN with
--- 3 Convolution layers
--- max pooling layer
--- 2 fully connected layers
+I have created a CNN with
+3 Convolution layers
+max pooling layer
+2 fully connected layers
 This is a very simple CNN and I tried to focus on the model's ability of feature extraction and tried to keep it simple so that model does not behave in an unpredictiable way.
 
 b. Classification Accuracy:
